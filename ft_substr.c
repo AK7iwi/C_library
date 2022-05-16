@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/16 03:04:31 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/16 11:03:26 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/16 11:44:27 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,11 @@ char *ft_substr(char const *s, unsigned int start,size_t len)
   
     char *dest;
     size_t i;
-    int j;
+    size_t j;
 
     i = 0;
     j = 0;
-    if (len > ft_strlen(s) - start)
+    if (len  > ft_strlen(s) - start)
         j = ft_strlen(s) - start;
     else
         j = len;
@@ -39,11 +39,16 @@ char *ft_substr(char const *s, unsigned int start,size_t len)
     {
         i++;
     }
-    while(i <= j + start -1)
+    while(i < j + start )
     {
         dest[i - start] = s[i]; 
         i++;
     } 
     dest[i] = '\0';
-    return(dest);   
+    return(dest); 
+}
+
+int main()
+{
+    printf("%s", ft_substr("lorem ipsum dolor sit amet", 0 , 10));
 }
