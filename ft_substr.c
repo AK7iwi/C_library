@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/16 03:04:31 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/16 10:44:15 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/16 11:03:26 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,9 @@ char *ft_substr(char const *s, unsigned int start,size_t len)
     if (!dest)
         return(NULL);
     if (len == 0)
-        return(NULL);
+        return(ft_calloc(1,sizeof(char)));
     if (start > ft_strlen(s))
-        return(NULL);
+        return(ft_calloc(1,sizeof(char)));
     while (i < start)
     {
         i++;
