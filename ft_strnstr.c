@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 06:07:54 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/14 22:02:39 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/16 04:41:49 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 #include <string.h>
 #include "libft.h"
 
-#include "libft.h"
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	unsigned int		i;
