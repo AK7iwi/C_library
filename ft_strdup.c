@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 06:24:37 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/14 11:21:08 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/16 10:11:49 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,11 +32,3 @@ char *ft_strdup(const char *s)
 	dest[i] = '\0';
 	return (dest);
 }
-
-
-/*
-int main()
-{
-	printf("%s", ft_strdup("OUI"));	
-}
-*/
