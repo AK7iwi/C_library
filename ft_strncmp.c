@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 03:53:29 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/14 11:21:28 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/18 00:38:00 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,17 +20,18 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	size_t	a;
 
 	a = 0;
-	while (*s1 != '\0' && *s1 == *s2 && a < n - 1)
+	if (n == 0)
+	{
+		return (0);
+	}
+	while (*s1 == *s2 && a < n - 1)
 	{
 		s1++;
 		s2++;
 		a++;
 	}
-	if (n == 0)
-	{
-		return (0);
-	}
-	return (*s1 - *s2);
+	
+	return ((unsigned char)*s1 - (unsigned char)*s2);
 }
 
 /*
