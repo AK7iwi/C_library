@@ -6,11 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/18 02:48:46 by mfeldman          #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2022/05/18 06:52:56 by mfeldman         ###   ########.fr       */
-=======
-/*   Updated: 2022/05/18 06:49:45 by mfeldman         ###   ########.fr       */
->>>>>>> 4c36a8f69d9aa2f9ab3ec91c791192af43093f9f
+/*   Updated: 2022/05/18 06:56:50 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,9 +43,5 @@ char *ft_strtrim(char const *s1, char const *set)
     }
     s2[k] = '\0';
     return(s2);
-<<<<<<< HEAD
-    or
-=======
-    o
->>>>>>> 4c36a8f69d9aa2f9ab3ec91c791192af43093f9f
+    
 }
