@@ -6,16 +6,38 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/18 02:48:46 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/18 03:18:24 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/18 03:30:19 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 char *ft_strtrim(char const *s1, char const *set)
 {
     char *s2;
+    size_t i;
+    size_t j;
+    size_t k;
     
-    s2 = (char *)malloc(sizeof(char) * ft_strlen(s1) + 1)
+    
+    s2 = (char *)malloc(sizeof(char) * ft_strlen(s1) + 1);
+    i = 0;
+    k = 0;
     if (!s2)
         return(NULL);       
-     
+    while(s1[i])
+    {
+        j = 0;
+        while(set[j])
+        {
+            if(s1[i] != set[j])
+            {
+                s2[k] = set[j];
+                j++;
+                k++;
+            }
+        }
+        i++;
+    }
+    return(s2);
+    
 }
