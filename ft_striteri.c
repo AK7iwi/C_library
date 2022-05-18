@@ -6,11 +6,16 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/18 21:29:31 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/18 21:29:43 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/18 21:33:53 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void ft_striteri(char *s, void (*f)(unsigned int,char*))
 {
-    
+    int i;
+
+    while(s[i])
+    {
+        
+    }
 }
