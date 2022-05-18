@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/18 02:48:46 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/18 07:08:43 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/18 07:09:33 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,6 @@ char *ft_strtrim(char const *s1, char const *set)
         i++;
     }
     s2[k] = '\0';
-    return(s2 +`);
+    return(s2);
     
 }
