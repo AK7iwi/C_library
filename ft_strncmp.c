@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 03:53:29 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/18 00:38:00 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/19 05:35:15 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		s2++;
 		a++;
 	}
-	
 	return ((unsigned char)*s1 - (unsigned char)*s2);
 }
 
