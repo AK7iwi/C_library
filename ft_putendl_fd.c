@@ -6,13 +6,13 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/18 23:33:47 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/18 23:37:27 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/19 14:07:36 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putendl_fd(char *s, int fd)
+void	ft_putendl_fd(char *s, int fd)
 {
 	int	i;
 
@@ -22,5 +22,5 @@ void ft_putendl_fd(char *s, int fd)
 		ft_putchar_fd(s[i], fd);
 		i++;
 	}
-    write(fd,"\n", 1);
+	write(fd, "\n", 1);
 }

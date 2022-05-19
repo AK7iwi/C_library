@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 06:24:37 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/16 10:11:49 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/19 14:14:30 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include <stdlib.h>
 #include "libft.h"
 
-char *ft_strdup(const char *s)
+char	*ft_strdup(const char *s)
 {
 	size_t	i;
 	char	*dest;

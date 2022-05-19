@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 04:09:10 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/14 11:20:14 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/19 13:51:02 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,12 @@
 #include <ctype.h>
 #include "libft.h"
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
 	if (!(c >= ' ' && c <= '~'))
-		return(0);
-	return(16384);
+		return (0);
+	return (16384);
 }
-
-
 /*
 int main()
 

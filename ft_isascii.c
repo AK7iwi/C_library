@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/05 11:18:37 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/14 11:20:00 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/19 13:50:00 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,12 @@
 #include <ctype.h> 
 #include "libft.h"
 
-int ft_isascii(int c)
+int	ft_isascii(int c)
 {
 	if (!(c >= 0 && c <= 127))
-		return(0);
-	return(1);
+		return (0);
+	return (1);
 }
-
-
 /*
 int main()
 {
@@ -45,4 +43,3 @@ int main()
 }
 
 */
-

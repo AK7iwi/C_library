@@ -6,29 +6,26 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 04:06:53 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/14 11:19:33 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/19 13:28:54 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include <strings.h>
 #include <stdio.h>
 #include "libft.h"
 
-void ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-	char *str;
+	char	*str;
 
 	str = s;
-
-	while(n)
+	while (n)
 	{
 		*str = 0;
 		str++;
 		n--;
 	}
 }
-
 /*
 int main()
 {

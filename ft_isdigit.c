@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/05 08:31:48 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/14 11:20:07 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/19 13:50:32 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,12 @@
 #include <ctype.h> 
 #include "libft.h"
 
-int  ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
-
 	if (!(c >= '0' && c <= '9'))
-		return(0);
-	return(2048);
-
+		return (0);
+	return (2048);
 }
-
 /*
 int main()
 {
@@ -44,4 +41,3 @@ int main()
 
 }
 */
-

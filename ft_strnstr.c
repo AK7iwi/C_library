@@ -6,10 +6,9 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 06:07:54 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/16 04:41:49 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/19 14:28:35 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include <string.h>
 #include "libft.h"
@@ -18,6 +17,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	unsigned int		i;
 	unsigned int		j;
+
 	if (little[0] == '\0')
 		return ((char *)big);
 	i = 0;
@@ -37,4 +37,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (0);
 }
- 

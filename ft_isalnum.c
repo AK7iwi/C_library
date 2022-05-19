@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/05 09:02:33 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/19 02:09:22 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/19 13:47:52 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,10 @@
 #include <ctype.h>
 #include "libft.h"
 
-int ft_isalnum(int c)
+int	ft_isalnum(int c)
 {
-	if (!(c >= 'a' && c <= 'z') && !(c >= 'A' && c <= 'Z') && !(c >= '0' && c <= '9'))
-			return(0);
-	return(8);
+	if ((c >= 'a' && c <= 'z')
+		|| (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9'))
+		return (8);
+	return (0);
 }

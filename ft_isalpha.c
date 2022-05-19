@@ -6,28 +6,23 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 04:06:44 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/19 02:10:47 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/19 13:49:07 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-
 
 #include <stdio.h>
 #include <ctype.h> 
 #include "libft.h"
 
-int  ft_isalpha(int c)
+int	ft_isalpha(int c)
 {
-
 	if (!(c >= 'a' && c <= 'z'))
 	{
 		if (!(c >= 'A' && c <= 'Z'))
-			return(0);
+			return (0);
 	}
-	return(1024);
-
+	return (1024);
 }
-
 /*
 int main()
 {

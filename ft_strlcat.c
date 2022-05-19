@@ -6,14 +6,13 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 22:48:24 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/18 00:44:01 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/19 14:20:59 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include <stdio.h>
 #include "libft.h"
-
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
@@ -22,10 +21,8 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 
 	dest_len = ft_strlen(dest);
 	src_len = ft_strlen(src);
-	
 	if (!size || dest_len >= size)
 		return (size + src_len);
-	
 	if (src_len < size - dest_len)
 		ft_memcpy(dest + dest_len, src, src_len + 1);
 	else

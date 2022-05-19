@@ -6,11 +6,12 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/18 10:32:39 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/18 11:31:48 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/19 13:51:43 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 static int	ft_len(long long nb)
 {
 	long long	n;

@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 00:09:40 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/14 16:25:09 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/19 14:14:07 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,21 @@
 #include <stdio.h>
 #include "libft.h"
 
-char *ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
-    int i;
-    
-    i = 0;
-    while(s[i])
-    {
-        if (s[i] == (char)c)
-        {
-            return((char *)(s + i));
-        }   
-        i++;
-    }
-    if (s[i] == (char)c)
-    {
-        return((char *)(s + i));
-    }
-    return(NULL);
+	int	i;
+	
+	i = 0;
+	while (s[i])
+	{
+		if (s[i] == (char)c)
+			return ((char *)(s + i));
+		i++;
+	}
+	if (s[i] == (char)c)
+		return ((char *)(s + i));
+	return (NULL);
 }
-
 /*
 int main()
 {
