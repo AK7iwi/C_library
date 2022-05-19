@@ -6,12 +6,10 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 04:06:53 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/19 13:28:54 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/19 15:57:01 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <strings.h>
-#include <stdio.h>
 #include "libft.h"
 
 void	ft_bzero(void *s, size_t n)

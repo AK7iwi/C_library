@@ -6,12 +6,10 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 03:59:58 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/19 13:59:03 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/19 15:57:26 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
 #include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)

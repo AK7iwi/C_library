@@ -6,12 +6,10 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 22:48:24 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/19 14:20:59 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/19 15:58:11 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
 #include "libft.h"
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)

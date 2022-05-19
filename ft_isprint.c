@@ -6,12 +6,10 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 04:09:10 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/19 13:51:02 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/19 15:57:18 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <ctype.h>
 #include "libft.h"
 
 int	ft_isprint(int c)

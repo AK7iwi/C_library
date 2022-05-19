@@ -6,12 +6,10 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 04:06:44 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/19 13:49:07 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/19 15:57:11 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <ctype.h> 
 #include "libft.h"
 
 int	ft_isalpha(int c)

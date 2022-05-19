@@ -6,12 +6,10 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 06:23:04 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/19 15:54:12 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/19 16:49:36 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
 #include "libft.h"
 
 int	ft_atoi(const char *nptr)

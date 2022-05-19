@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/18 23:40:13 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/19 14:09:19 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/19 16:03:37 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,7 @@ void	ft_putnbr_fd(int n, int fd)
 		b *= -1;
 	}
 	if (b <= 9)
-	{
 		ft_putchar_fd('0' + b, fd);
-	}
 	else if (b > 9)
 	{
 		ft_putnbr_fd(b / 10, fd);

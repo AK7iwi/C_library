@@ -6,11 +6,10 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 19:27:18 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/19 14:04:55 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/19 15:57:34 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
 #include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)

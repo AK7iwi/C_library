@@ -6,12 +6,10 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 00:09:40 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/19 15:53:46 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/19 15:57:48 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
 #include "libft.h"
 
 char	*ft_strchr(const char *s, int c)

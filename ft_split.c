@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/18 08:53:56 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/19 14:10:19 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/19 16:47:13 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,7 @@
 static int	ft_is_charset(char const str, char c)
 {
 	if (str == c)
-	{
 		return (1);
-	}
 	return (0);
 }
 

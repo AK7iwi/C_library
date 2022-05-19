@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/05 09:41:57 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/19 15:55:27 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/19 15:56:56 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <string.h>
+# include <stdio.h>
 
 typedef struct s_list
 {

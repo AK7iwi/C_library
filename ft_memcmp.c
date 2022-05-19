@@ -6,12 +6,10 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 05:06:09 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/19 13:59:41 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/19 16:01:25 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
 #include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
@@ -20,9 +18,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 
 	a = 0;
 	if (n == 0)
-	{
 		return (0);
-	}
 	while (*(unsigned char *)s1 == *(unsigned char *)s2 && a < n - 1)
 	{
 		s1++;

@@ -6,29 +6,23 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 03:53:29 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/19 08:22:34 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/19 16:18:19 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
-#include <string.h>
 #include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	size_t	a;
+	size_t	i;
 
-	a = 0;
+	i = -1;
 	if (n == 0)
-	{
 		return (0);
-	}
-	while (*s1 == *s2 && a < n - 1 && *s1 != '\0')
+	while (*s1 == *s2 && ++i < n - 1 && *s1 != '\0')
 	{
 		s1++;
 		s2++;
-		a++;
 	}
 	return ((unsigned char)*s1 - (unsigned char)*s2);
 }

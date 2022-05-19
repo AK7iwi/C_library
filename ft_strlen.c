@@ -6,12 +6,10 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/05 13:05:17 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/19 15:53:15 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/19 15:58:17 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
 #include "libft.h"
 
 size_t	ft_strlen(const char *s)
