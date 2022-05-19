@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 06:23:04 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/19 13:26:11 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/19 15:54:12 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@
 
 int	ft_atoi(const char *nptr)
 {
-	size_t	i;
+	size_t		i;
 	long long	j;
-	int	cont;
+	int			cont;
 
 	i = 0;
 	j = 0;

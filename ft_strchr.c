@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 00:09:40 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/19 14:14:07 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/19 15:53:46 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 char	*ft_strchr(const char *s, int c)
 {
 	int	i;
-	
+
 	i = 0;
 	while (s[i])
 	{

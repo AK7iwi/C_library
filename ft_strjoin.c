@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/16 03:36:12 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/19 14:19:17 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/19 15:54:34 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*s3;
 	size_t	i;
 	size_t	j;
-	
+
 	s3 = (char *)malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
 	i = 0;
 	j = 0;
