@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/19 02:41:38 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/19 04:26:10 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/19 04:31:08 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,6 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 			list = list->next;
 		list->next = new;
 	}
-	else 
+	else
 		*lst = new;
 }
