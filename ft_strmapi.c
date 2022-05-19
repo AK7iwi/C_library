@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/18 21:10:13 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/18 21:26:04 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/05/19 07:26:37 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
     int i; 
     
     dest = malloc(sizeof(char) * (ft_strlen(s) + 1));
+    if(!dest)
+        return(NULL);
     i = 0;
     while((char)s[i])
     {
