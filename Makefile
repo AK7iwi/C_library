@@ -1,6 +1,6 @@
 CC				= gcc
 RM				= rm -f
-CFLAGS			= -Wall -Wextra -Werror -I.
+CFLAGS			= -c -Wall -Wextra -Werror -I.
 NAME			= libft.a
 OBJS			= $(SRCS:.c=.o)
 BONUS_OBJS		= $(BONUS:.c=.o)
@@ -17,12 +17,14 @@ SRCS			=	ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c \
 					
 BONUS			=	ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
 					ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c \
-					ft_lstmap.c
+					ft_lstmap.c\
 
-all:			$(NAME)
 
 $(NAME):		$(OBJS)
+				$(CC) $(SRCS) $(CFLAGS)
 				ar rcs $(NAME) $(OBJS)
+
+all:			$(NAME)
 
 clean:
 				$(RM) $(OBJS) $(BONUS_OBJS)
@@ -33,6 +35,7 @@ fclean:			clean
 re:				fclean $(NAME)
 
 bonus:			$(BONUS_OBJS)
+				$(CC) $(SRCS) $(BONUS) $(CFLAGS)
 				ar rcs $(NAME) $(BONUS_OBJS)
 
 .PHONY:			all clean fclean re bonus
