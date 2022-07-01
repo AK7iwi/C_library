@@ -1,3 +1,3 @@
 # Libft-C
 
-C library functions
+C library functions.
