@@ -1,3 +1,3 @@
 # Libft-C
 
-Libraire en C.
+C library functions
