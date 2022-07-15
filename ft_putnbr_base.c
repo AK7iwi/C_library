@@ -6,9 +6,11 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/15 19:10:41 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/07/15 19:11:20 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/07/15 19:26:05 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_putnbr_base(unsigned long long int nb, char *base)
 {
