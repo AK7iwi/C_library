@@ -1,6 +1,6 @@
 CC				= gcc
 RM				= rm -f
-CFLAGS			= -c -Wall -Wextra -Werror -I.
+CFLAGS			=-Wall -Wextra -Werror -I.
 NAME			= libft.a
 OBJS			= $(SRCS:.c=.o)
 
