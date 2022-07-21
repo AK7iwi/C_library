@@ -1,6 +1,6 @@
-CC				= gcc
+CC				= gcc 
 RM				= rm -f
-CFLAGS			=-Wall -Wextra -Werror -I.
+CFLAGS			= -Wall -Wextra -Werror -I.
 NAME			= libft.a
 OBJS			= $(SRCS:.c=.o)
 
@@ -15,7 +15,8 @@ SRCS			=	ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c \
 					ft_putendl_fd.c ft_putnbr_fd.c ft_striteri.c \
 					ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
 					ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c \
-					ft_lstmap.c ft_putnbr_base.c ft_itoua.c ft_putnbr_fdu.c \
+					ft_lstmap.c ft_putnbr_base.c ft_putnbr_fdu.c ft_intlen.c \
+					ft_uintlen.c ft_hexlen.c ft_putchar_fdu.c\
 
 
 $(NAME):		$(OBJS)
