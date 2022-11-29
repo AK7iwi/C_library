@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/05 09:41:57 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/07/21 03:35:18 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/11/29 22:19:51 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,29 @@
 # include <string.h>
 # include <stdio.h>
 
+/*liste chainee*/
+
 typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
 }	t_list;
+
+/*liste doublement chainee*/
+
+typedef struct s_stack
+{
+	int				value;
+	struct s_stack *prev;
+	struct s_stack *next;
+	
+}	t_stack;
+
+typedef struct 
+{
+    t_stack *first;
+	t_stack *last;
+} t_listdc;
 
 int			ft_isalpha(int c);
 int			ft_isdigit(int c);
@@ -73,5 +91,7 @@ void		ft_lstclear(t_list **lst, void (*del)(void*));
 void		ft_lstiter(t_list *lst, void (*f)(void *));
 t_list		*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 void		ft_putnbr_base(unsigned long long int nb, char *base);
-
+void 		initld(t_listdc *l);
+void 		ldfree_stack(t_listdc *l);
+void 		*ldpush_stack(t_listdc *l, int val);
 #endif
