@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 22:05:43 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/11/29 22:22:46 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/11/29 23:16:36 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 
 void *ldpush_stack(t_listdc *l, int val)
 {
-	initld(l);
 	t_stack *new;
 	new =  malloc(sizeof(t_stack));
 	if(!new)

@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 22:06:48 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/11/29 22:22:43 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/11/29 23:16:24 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 void ldfree_stack(t_listdc *l)
 {
-	initld(l);
 	t_stack *tmp;
 	t_stack *pelem;
 	pelem = l->first;
