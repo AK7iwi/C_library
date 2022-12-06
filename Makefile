@@ -17,7 +17,7 @@ SRCS			=	ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c \
 					ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c \
 					ft_lstmap.c ft_putnbr_base.c ft_putnbr_fdu.c ft_intlen.c \
 					ft_uintlen.c ft_hexlen.c ft_putchar_fdu.c ft_dlstfree.c ft_dlstinit.c\
-					ft_dlstpush.c ft_dlstsize.c\
+					ft_dlstfill.c ft_dlstsize.c\
 
 
 $(NAME):		$(OBJS)
