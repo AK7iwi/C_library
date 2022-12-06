@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/05 09:41:57 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/11/29 22:19:51 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/12/06 23:29:43 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,7 +91,8 @@ void		ft_lstclear(t_list **lst, void (*del)(void*));
 void		ft_lstiter(t_list *lst, void (*f)(void *));
 t_list		*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 void		ft_putnbr_base(unsigned long long int nb, char *base);
-void 		initld(t_listdc *l);
-void 		ldfree_stack(t_listdc *l);
-void 		*ldpush_stack(t_listdc *l, int val);
+void 		ft_dlstfree(t_listdc *l);
+void 		ft_dlstinit(t_listdc *l);
+void 		*ft_dlstpush(t_listdc *l, int val);
+int			ft_dlstsize(t_listdc *l);
 #endif

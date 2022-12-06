@@ -1,19 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_initld.c                                        :+:      :+:    :+:   */
+/*   ft_dlstfree.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/29 22:11:50 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/11/29 22:20:15 by mfeldman         ###   ########.fr       */
+/*   Created: 2022/11/29 22:06:48 by mfeldman          #+#    #+#             */
+/*   Updated: 2022/12/06 23:29:58 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void initld(t_listdc *l)
+/*free la liste doublement chainee*/
+void ft_dlstfree(t_listdc *l)
 {
-   l->first = NULL;
-   l->last = NULL;
+	t_stack *tmp;
+	t_stack *pelem;
+	pelem = l->first;
+	while(pelem)
+	{
+		tmp = pelem;
+		pelem = pelem->next;
+		free(tmp);
+	}
+	l->first = NULL;
+	l->last = NULL;
 }
