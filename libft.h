@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/05 09:41:57 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/12/06 23:34:27 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/12/13 02:27:40 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,16 +31,16 @@ typedef struct s_list
 typedef struct s_stack
 {
 	int				value;
-	struct s_stack *prev;
-	struct s_stack *next;
-	
+	struct s_stack	*prev;
+	struct s_stack	*next;
+
 }	t_stack;
 
-typedef struct 
+typedef struct s_listdc
 {
-    t_stack *first;
-	t_stack *last;
-} t_listdc;
+	t_stack			*first;
+	t_stack			*last;
+}	t_listdc;
 
 int			ft_isalpha(int c);
 int			ft_isdigit(int c);
@@ -91,8 +91,8 @@ void		ft_lstclear(t_list **lst, void (*del)(void*));
 void		ft_lstiter(t_list *lst, void (*f)(void *));
 t_list		*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 void		ft_putnbr_base(unsigned long long int nb, char *base);
-void 		ft_dlstfree(t_listdc *l);
-void 		ft_dlstinit(t_listdc *l);
-void 		*ft_dlstfill(t_listdc *l, int val);
+void		ft_dlstfree(t_listdc *l);
+void		ft_dlstinit(t_listdc *l);
+void		*ft_dlstfill(t_listdc *l, int val);
 int			ft_dlstsize(t_listdc *l);
 #endif
