@@ -1,33 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_dlstfill.c                                      :+:      :+:    :+:   */
+/*   ft_lstadd_back_int.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/29 22:05:43 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/12/13 02:18:36 by mfeldman         ###   ########.fr       */
+/*   Created: 2023/05/05 20:03:33 by mfeldman          #+#    #+#             */
+/*   Updated: 2023/05/05 20:29:05 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*push l'element en fin de liste */
-
-void	*ft_dlstfill(t_listdc *l, int val)
+void	ft_lstadd_back_int(t_stack **lst, int val)
 {
-	t_stack	*new;
+	t_stack		*new_node;
+	t_stack		*last;
 
-	new = malloc (sizeof(t_stack));
-	if (!new)
-		return (NULL);
-	new->value = val;
-	new->prev = l->last;
-	new->next = NULL;
-	if (l->last)
-		l->last->next = new;
+	new_node = malloc(sizeof(t_stack));
+	if (!new_node)
+		return ;
+	new_node->value = val;
+	new_node->next = NULL;
+	if (*lst == NULL)
+		*lst = new_node;
 	else
-		l->first = new;
-	l->last = new;
-	return (0);
+	{
+		last = *lst;
+		while (last->next)
+			last = last->next;
+		last->next = new_node;
+	}
 }

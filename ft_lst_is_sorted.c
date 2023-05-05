@@ -1,21 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_dlstinit.c                                      :+:      :+:    :+:   */
+/*   ft_lst_is_sorted.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/29 22:11:50 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/12/13 02:22:09 by mfeldman         ###   ########.fr       */
+/*   Created: 2023/05/05 20:14:18 by mfeldman          #+#    #+#             */
+/*   Updated: 2023/05/05 20:41:43 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*init la liste doublement chainee*/
-
-void	ft_dlstinit(t_listdc *l)
+int	ft_lst_is_sorted(t_stack *lst)
 {
-	l->first = NULL;
-	l->last = NULL;
+	if (!lst)
+		return (0);
+	while (lst->next)
+	{
+		if (lst->value > lst->next->value)
+			return (0);
+		lst = lst->next;
+	}
+	return (1);
 }
