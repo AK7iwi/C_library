@@ -18,10 +18,10 @@ SRCS			=	ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c \
 					ft_uintlen.c ft_hexlen.c ft_putchar_fdu.c  ft_lst_is_sorted.c\
 					ft_lst_maxpos.c ft_lst_minpos.c ft_lstadd_back_int.c ft_lstfree.c\
 
+all:			$(NAME)
+
 $(NAME):		$(OBJS)
 				ar rcs $(NAME) $(OBJS)
-
-all:			$(NAME)
 
 clean:
 				$(RM) $(OBJS) 
