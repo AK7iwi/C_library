@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_dlstmax.c                                       :+:      :+:    :+:   */
+/*   ft_lstmax.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/05 20:17:18 by mfeldman          #+#    #+#             */
-/*   Updated: 2023/05/05 20:30:25 by mfeldman         ###   ########.fr       */
+/*   Updated: 2023/07/09 19:30:43 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_lstmax(t_stack *lst)
+int	ft_lstmax(t_list	*lst)
 {
 	int		max;
-	t_stack	*node;
+	t_list	*node;
 
 	if (!lst)
 		return (0);

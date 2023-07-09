@@ -6,18 +6,18 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/05 20:03:33 by mfeldman          #+#    #+#             */
-/*   Updated: 2023/05/05 20:29:05 by mfeldman         ###   ########.fr       */
+/*   Updated: 2023/07/09 19:31:00 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_back_int(t_stack **lst, int val)
+void	ft_lstadd_back_int(t_list **lst, int val)
 {
-	t_stack		*new_node;
-	t_stack		*last;
+	t_list	*new_node;
+	t_list	*last;
 
-	new_node = malloc(sizeof(t_stack));
+	new_node = malloc(sizeof(t_list));
 	if (!new_node)
 		return ;
 	new_node->value = val;

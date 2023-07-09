@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/05 09:41:57 by mfeldman          #+#    #+#             */
-/*   Updated: 2023/05/05 20:40:25 by mfeldman         ###   ########.fr       */
+/*   Updated: 2023/07/09 19:18:54 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,16 +23,9 @@
 typedef struct s_list
 {
 	void			*content;
+	int				value;
 	struct s_list	*next;
 }	t_list;
-
-/*liste chainee*/
-
-typedef struct s_stack
-{
-	int				value;
-	struct s_stack	*next;
-}	t_stack;
 
 int			ft_isalpha(int c);
 int			ft_isdigit(int c);
@@ -83,13 +76,13 @@ void		ft_lstclear(t_list **lst, void (*del)(void*));
 void		ft_lstiter(t_list *lst, void (*f)(void *));
 t_list		*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 void		ft_putnbr_base(unsigned long long int nb, char *base);
-int			ft_lstmax(t_stack *lst);
-int			ft_lstmin(t_stack *lst);
-int			ft_lst_is_sorted(t_stack *lst);
-int			ft_lst_is_sorted(t_stack *lst);
-int			ft_lst_maxpos(t_stack *tmp);
-int			ft_lst_minpos(t_stack *tmp);
-void		ft_lstadd_back_int(t_stack **lst, int val);
-void		ft_lstfree(t_stack **lst);
+int			ft_lstmax(t_list *lst);
+int			ft_lstmin(t_list *lst);
+int			ft_lst_is_sorted(t_list *lst);
+int			ft_lst_is_sorted(t_list *lst);
+int			ft_lst_maxpos(t_list *tmp);
+int			ft_lst_minpos(t_list *tmp);
+void		ft_lstadd_back_int(t_list **lst, int val);
+void		ft_lstfree(t_list **lst);
 
 #endif
