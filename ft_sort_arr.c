@@ -1,28 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lst_sort.c                                      :+:      :+:    :+:   */
+/*   ft_sort_arr.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/21 04:54:14 by mfeldman          #+#    #+#             */
-/*   Updated: 2023/07/21 04:55:51 by mfeldman         ###   ########.fr       */
+/*   Updated: 2023/07/21 05:52:02 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	*lst_sort(int *arr, t_list **a)
+int	*sort_arr(int *arr, int len)
 {
 	int		i;
 	int		j;
 	int		tmp;
 
 	i = 0;
-	while (i < ft_lstsize(*a))
+	while (i < len)
 	{
 		j = i + 1;
-		while (j < ft_lstsize(*a))
+		while (j < len)
 		{
 			if (arr[i] > arr[j])
 			{
@@ -36,3 +36,5 @@ int	*lst_sort(int *arr, t_list **a)
 	}
 	return (arr);
 }
+
+// len = array longueur 
