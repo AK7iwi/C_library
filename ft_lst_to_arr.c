@@ -1,26 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lst_is_sorted.c                                 :+:      :+:    :+:   */
+/*   ft_lst_to_arr.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/05 20:14:18 by mfeldman          #+#    #+#             */
-/*   Updated: 2023/07/09 19:28:11 by mfeldman         ###   ########.fr       */
+/*   Created: 2023/07/21 04:47:05 by mfeldman          #+#    #+#             */
+/*   Updated: 2023/07/21 04:47:31 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_lst_is_sorted(t_list *lst)
+int	*array(t_list **a)
 {
-	if (!lst)
-		return (0);
-	while (lst->next)
+	int		*arr;
+	int		start;
+	int		end;
+	t_list	*tmp;
+
+	tmp = *a;
+	start = 0;
+	end = ft_lstsize(*a);
+	arr = malloc(sizeof(int) * (end));
+	if (!arr)
+		return (ft_lstfree(a), NULL);
+	while (start < end)
 	{
-		if (lst->value > lst->next->value)
-			return (0);
-		lst = lst->next;
+		arr[start] = tmp->value;
+		tmp = tmp->next;
+		start++;
 	}
-	return (1);
+	return (arr);
 }

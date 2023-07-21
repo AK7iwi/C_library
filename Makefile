@@ -13,8 +13,9 @@ SRCS			=	ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c \
 					ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
 					ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c \
 					ft_lstmap.c ft_putnbr_base.c ft_putnbr_fdu.c ft_intlen.c \
-					ft_uintlen.c ft_hexlen.c ft_putchar_fdu.c  ft_lst_is_sorted.c\
-					ft_lst_maxpos.c ft_lst_minpos.c ft_lstadd_back_int.c ft_lstfree.c\
+					ft_uintlen.c ft_hexlen.c ft_putchar_fdu.c  ft_is_lst_sorted.c\
+					ft_lst_maxpos.c ft_lst_minpos.c ft_lstadd_back_int.c ft_lstfree.c \
+					ft_lst_scanbottom.c ft_lst_scantop.c ft_lst_to_arr.c\
 
 OBJS			= $(SRCS:.c=.o)
 
