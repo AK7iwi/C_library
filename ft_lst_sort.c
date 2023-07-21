@@ -1,32 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lst_scanbottom.c                                :+:      :+:    :+:   */
+/*   ft_lst_sort.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/21 04:41:11 by mfeldman          #+#    #+#             */
-/*   Updated: 2023/07/21 05:02:02 by mfeldman         ###   ########.fr       */
+/*   Created: 2023/07/21 04:54:14 by mfeldman          #+#    #+#             */
+/*   Updated: 2023/07/21 04:55:51 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_lst_scanbottom(t_list **a, int val)
+int	*lst_sort(int *arr, t_list **a)
 {
-	int		*arr;
-	int		pos;
+	int		i;
 	int		j;
+	int		tmp;
 
-	j = ft_lstsize(*a) - 1 ;
-	arr = lst_to_arr(a);
-	while (arr[j])
+	i = 0;
+	while (i < ft_lstsize(*a))
 	{
-		if (arr[j] < val)
-			break ;
-		j--;
+		j = i + 1;
+		while (j < ft_lstsize(*a))
+		{
+			if (arr[i] > arr[j])
+			{
+				tmp = arr[i];
+				arr[i] = arr[j];
+				arr[j] = tmp;
+			}
+			j++;
+		}
+		i++;
 	}
-	pos = j;
-	free(arr);
-	return (pos);
+	return (arr);
 }

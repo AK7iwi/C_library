@@ -6,13 +6,13 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/21 04:47:05 by mfeldman          #+#    #+#             */
-/*   Updated: 2023/07/21 04:47:31 by mfeldman         ###   ########.fr       */
+/*   Updated: 2023/07/21 04:53:58 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	*array(t_list **a)
+int	*lst_to_arr(t_list **a)
 {
 	int		*arr;
 	int		start;

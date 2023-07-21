@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/05 09:41:57 by mfeldman          #+#    #+#             */
-/*   Updated: 2023/07/21 04:47:47 by mfeldman         ###   ########.fr       */
+/*   Updated: 2023/07/21 04:55:45 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,6 +91,7 @@ void		ft_lstadd_back_int(t_list **lst, int val);
 void		ft_lstfree(t_list **lst);
 int			ft_lst_scantop(t_list **a, int val);
 int			ft_lst_scanbottom(t_list **a, int val);
-int			*array(t_list **a);
+int			*lst_to_arr(t_list **a);
+int			*lst_sort(int *arr, t_list **a);
 
 #endif
