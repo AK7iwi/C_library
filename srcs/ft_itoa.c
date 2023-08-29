@@ -1,37 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/16 03:04:31 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/19 16:26:00 by mfeldman         ###   ########.fr       */
+/*   Created: 2022/05/18 10:32:39 by mfeldman          #+#    #+#             */
+/*   Updated: 2023/08/29 16:55:09 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_itoa(int nb)
 {
-	char	*str;
-	size_t	lensrc;
-	size_t	i;
+	char		*dest;
+	long long	n;
+	size_t		size;
 
-	i = 0;
-	lensrc = ft_strlen(s);
-	if (len + start > lensrc)
-		len = lensrc - start;
-	if (start > lensrc)
-		return (ft_calloc(1, sizeof (char)));
-	str = (char *)malloc(sizeof(char) * (len + 1));
-	if (!str)
+	n = nb;
+	size = ft_longnblen(n);
+	dest = malloc(sizeof(char) * (size + 1));
+	if (!dest)
 		return (NULL);
-	if (start < (unsigned int)lensrc)
+	dest[size--] = '\0';
+	if (n == 0)
+		dest[size] = '0';
+	if (n < 0)
 	{
-		while (i < len)
-			str[i++] = s[start++];
+		dest[0] = '-';
+		n *= -1;
 	}
-	str[i] = '\0';
-	return (str);
+	while (n > 0)
+	{
+		dest[size] = ((n % 10) + '0');
+		n /= 10;
+		size--;
+	}
+	return (dest);
 }
