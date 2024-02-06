@@ -1,4 +1,4 @@
-# Libft
+# Library in C 
 
 A versatile C library containing custom implementations of standard functions, providing essential utilities for string manipulation, memory management, and more.
 
